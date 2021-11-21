@@ -1,0 +1,88 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+c o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Starting Jack-in Terminal: clojure -Sdeps '{:deps {nrepl/nrepl {:mvn/version,"0.8.3"},cider/cider-nrepl {:mvn/version,"0.26.0"}}}'  -m nrepl.cmdline --middleware "[cider.nrepl/cider-middleware]"
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS: 
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉user꞉>  ; Use `alt+enter` to evaluate
+; Jack-in done.
+clj꞉user꞉> 
+; Evaluating file: main.clj
+Evaluation count : 72 in 6 samples of 12 calls.
+             Execution time mean : 12.555175 ms
+    Execution time std-deviation : 2.536303 ms
+   Execution time lower quantile : 9.466294 ms ( 2.5%)
+   Execution time upper quantile : 15.259949 ms (97.5%)
+                   Overhead used : 7.785122 ns
+Evaluation count : 222 in 6 samples of 37 calls.
+; Syntax error (UnsupportedOperationException) compiling at (src/workshop/main.clj:73:1).
+; null
+             Execution time mean : 2.890999 ms
+    Execution time std-deviation : 156.867146 µs
+   Execution time lower quantile : 2.711202 ms ( 2.5%)
+   Execution time upper quantile : 3.035063 ms (97.5%)
+                   Overhead used : 7.785122 ns
+; Evaluation of file main.clj failed: class clojure.lang.Compiler$CompilerException
+
+clj꞉user꞉> 
+clj꞉workshop.main꞉> 
+nil
+clj꞉workshop.main꞉> 
+(:int32 :int16 :float32 :float64 :int64 :uint64 :string :uint16 :int8 :uint32 :keyword :uuid :boolean :object :char :uint8)
+clj꞉workshop.main꞉> 
+; Evaluating file: main.clj
+Evaluation count : 72 in 6 samples of 12 calls.
+             Execution time mean : 11.518908 ms
+    Execution time std-deviation : 1.781540 ms
+   Execution time lower quantile : 9.580868 ms ( 2.5%)
+   Execution time upper quantile : 13.507368 ms (97.5%)
+                   Overhead used : 7.785122 ns
+Evaluation count : 228 in 6 samples of 38 calls.
+; Syntax error (UnsupportedOperationException) compiling at (src/workshop/main.clj:74:1).
+; null
+             Execution time mean : 2.924441 ms
+    Execution time std-deviation : 273.797713 µs
+   Execution time lower quantile : 2.705750 ms ( 2.5%)
+   Execution time upper quantile : 3.364798 ms (97.5%)
+                   Overhead used : 7.785122 ns
+
+Found 1 outliers in 6 samples (16.6667 %)
+	low-severe	 1 (16.6667 %)
+ Variance from outliers : 15.8414 % Variance is moderately inflated by outliers
+; Evaluation of file main.clj failed: class clojure.lang.Compiler$CompilerException
+
+clj꞉workshop.main꞉> 
+clj꞉workshop.main꞉> 
+; Syntax error compiling at (src/workshop/main.clj:90:1).
+; Unable to resolve symbol: big-rdr in this context
+clj꞉workshop.main꞉> 
+nil
+clj꞉workshop.main꞉> 
+nil
+clj꞉workshop.main꞉> 
+; Syntax error reading source at (REPL:88:72).
+; Unmatched delimiter: )
+clj꞉workshop.main꞉> 
+#'workshop.main/big-rdr
+clj꞉workshop.main꞉> 
+(0 83 56 231 308)
+clj꞉workshop.main꞉> 
+#'workshop.main/b-floats
+clj꞉workshop.main꞉> 
+#'workshop.main/a-ints
+clj꞉workshop.main꞉> 
+:int32
+clj꞉workshop.main꞉> 
+[0.0 2.8080394906025354 14.843660043491775 26.449489081939564 20.503271690143293 11.30019565404352 12.422765304868314 35.43813599932274 11.39685021049317 17.99987289686422]
+clj꞉workshop.main꞉> 

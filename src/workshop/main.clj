@@ -68,7 +68,8 @@ an-int-buffer
 
 (dtype/elemwise-datatype an-int-buffer)
 
-(tech.v3.datatype.casting/all-datatypes)
+(require '[tech.v3.datatype.casting :as cast])
+(cast/all-datatypes)
 
 ;; What is this thing the reader?
 
